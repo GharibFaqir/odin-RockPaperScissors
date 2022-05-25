@@ -68,9 +68,7 @@ function game() {
     playerWinCounter = 0;
     for (i = 0; i < 5; i++) {
         // 5. Player Selection:
-        playerSelection = prompt(`Kindly type your selection, Case doesn't matter...
-        1. Rock     2. Paper    3. Scissors
-        Ready get set Go!`);
+        playerSelection = prompt(`Enter your selection: \n 1. Rock \n 2. Paper \n 3. Scissors`);
         playerSelection = playerSelection.toLowerCase();
 
         computerSelection = computerPlay();
@@ -84,7 +82,7 @@ function game() {
         playerWinCounter = playerWinCounter + playRound(playerSelection, computerSelection);
     }
 
-    console.log(`Result: You Won ${playerWinCounter}/${i} times!!`);
+    console.log(`Result: You Won ${playerWinCounter}/${i} rounds!!`);
     alert(`Result: You Won ${playerWinCounter}/${i} times!!`);
     if (playerWinCounter <= i/2) {
         console.log("Sorry! You have lost the game!!");
