@@ -83,7 +83,7 @@ function game() {
     }
 
     console.log(`Result: You Won ${playerWinCounter}/${i} rounds!!`);
-    alert(`Result: You Won ${playerWinCounter}/${i} times!!`);
+    alert(`Result: You Won ${playerWinCounter}/${i} rounds!!`);
     if (playerWinCounter <= i/2) {
         console.log("Sorry! You have lost the game!!");
         alert("Sorry! You have lost the game!!");
