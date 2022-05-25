@@ -1,5 +1,6 @@
 // 1. Greetings:
 console.log("Welcome, Welcome!!");
+alert("Welcome, Welcome!!");
 
 // 2. Computer Play:
 function computerPlay() {
@@ -83,15 +84,15 @@ function game() {
         playerWinCounter = playerWinCounter + playRound(playerSelection, computerSelection);
     }
 
-    console.log(`Result: You Won ${playerWinCounter}/ ${i} times!!`);
-    if (playerWinCounter == 0) {
-        console.log("Game Tied!!");
-    }
-    else if (playerWinCounter <= i/2) {
+    console.log(`Result: You Won ${playerWinCounter}/${i} times!!`);
+    alert(`Result: You Won ${playerWinCounter}/${i} times!!`);
+    if (playerWinCounter <= i/2) {
         console.log("Sorry! You have lost the game!!");
+        alert("Sorry! You have lost the game!!");
     }
     else {
         console.log("GG! You have won!!");
+        alert("GG! You have won!!");
     }
 }
 
